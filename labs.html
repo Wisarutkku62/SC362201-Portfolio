@@ -7,62 +7,72 @@
     <title>Lab | Portfolio ของ [ชื่อของคุณ]</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600&family=Anuphan:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;600;700&family=Kanit:wght@600;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/blocks.css">
 </head>
 
 <body>
-    <header>
-        <nav><span class="logo">[ชื่อของคุณ]</span><a class="menu" href="index.html">หน้าแรก</a><a class="menu"
-                href="assignments.html">Assignment</a><a class="menu active" href="labs.html">Lab</a><a class="menu"
-                href="project.html">Project</a><a class="menu" href="about.html">เกี่ยวกับฉัน</a></nav>
-    </header>
-    <main>
-        <h1 class="page-title">Lab</h1>
-        <p class="page-sub">รวมแล็บทั้งหมดที่ได้เรียน กดที่ช่องเพื่อดูรายละเอียด</p>
-        <input class="search" id="search" type="search" placeholder="ค้นหา Lab...">
-        <p class="empty" id="empty" hidden>ไม่พบ Lab ที่ค้นหา</p>
-        <div class="grid">
-            <a class="block lab" href="#">
-                <span class="badge">Lab 1</span>
-                <h3>[ชื่อ Lab ที่ 1]</h3>
-                <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
-                <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ</span></div>
-            </a>
-            <a class="block lab" href="#">
-                <span class="badge">Lab 2</span>
-                <h3>[ชื่อ Lab ที่ 2]</h3>
-                <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
-                <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ</span></div>
-            </a>
-            <a class="block lab" href="#">
-                <span class="badge">Lab 3</span>
-                <h3>[ชื่อ Lab ที่ 3]</h3>
-                <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
-                <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ</span></div>
-            </a>
-            <a class="block lab" href="#">
-                <span class="badge">Lab 4</span>
-                <h3>[ชื่อ Lab ที่ 4]</h3>
-                <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
-                <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ</span></div>
-            </a>
-            <a class="block lab" href="#">
-                <span class="badge">Lab 5</span>
-                <h3>[ชื่อ Lab ที่ 5]</h3>
-                <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
-                <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ</span></div>
-            </a>
-            <a class="block lab" href="#">
-                <span class="badge">Lab 6</span>
-                <h3>[ชื่อ Lab ที่ 6]</h3>
-                <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
-                <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ</span></div>
-            </a>
-        </div>
-    </main>
-    <footer>© 2026 [ชื่อของคุณ] · Portfolio รายวิชา [ชื่อวิชา]</footer>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">[ชื่อของคุณ]<small>Portfolio รายวิชา [ชื่อวิชา]</small></div>
+            <nav><a class="menu" href="index.html"><span>01</span>หน้าแรก</a><a class="menu"
+                    href="assignments.html"><span>02</span>Assignment</a><a class="menu active"
+                    href="labs.html"><span>03</span>Lab</a><a class="menu"
+                    href="project.html"><span>04</span>Project</a><a class="menu"
+                    href="about.html"><span>05</span>เกี่ยวกับฉัน</a></nav>
+            <p class="side-foot">© 2026 [ชื่อของคุณ]</p>
+        </aside>
+        <main class="content">
+            <div class="wrap">
+                <p class="eyebrow">ผลงาน 03</p>
+                <h1 class="page-title"><mark>Lab</mark> ทั้งหมด</h1>
+                <p class="page-sub">รวมแล็บทั้งหมดที่ได้เรียน กดที่ช่องเพื่อดูรายละเอียด</p>
+                <div class="tools"><input class="search" id="search" type="search" placeholder="ค้นหา Lab..."></div>
+                <p class="empty" id="empty" hidden>ไม่พบ Lab ที่ค้นหา</p>
+                <div class="grid">
+                    <a class="block" href="#">
+                        <span class="num">01</span><span class="badge">Lab 1</span>
+                        <h3>[ชื่อ Lab ที่ 1]</h3>
+                        <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
+                        <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ →</span></div>
+                    </a>
+                    <a class="block" href="#">
+                        <span class="num">02</span><span class="badge">Lab 2</span>
+                        <h3>[ชื่อ Lab ที่ 2]</h3>
+                        <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
+                        <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ →</span></div>
+                    </a>
+                    <a class="block" href="#">
+                        <span class="num">03</span><span class="badge">Lab 3</span>
+                        <h3>[ชื่อ Lab ที่ 3]</h3>
+                        <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
+                        <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ →</span></div>
+                    </a>
+                    <a class="block" href="#">
+                        <span class="num">04</span><span class="badge">Lab 4</span>
+                        <h3>[ชื่อ Lab ที่ 4]</h3>
+                        <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
+                        <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ →</span></div>
+                    </a>
+                    <a class="block" href="#">
+                        <span class="num">05</span><span class="badge">Lab 5</span>
+                        <h3>[ชื่อ Lab ที่ 5]</h3>
+                        <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
+                        <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ →</span></div>
+                    </a>
+                    <a class="block" href="#">
+                        <span class="num">06</span><span class="badge">Lab 6</span>
+                        <h3>[ชื่อ Lab ที่ 6]</h3>
+                        <p>อธิบายสั้นๆ ว่าแล็บนี้ทำอะไร ใช้เครื่องมืออะไร และได้ผลลัพธ์อย่างไร</p>
+                        <div class="meta"><span>[วว/ดด/ปป]</span><span class="open">ดูแล็บ →</span></div>
+                    </a>
+                </div>
+            </div>
+            <footer>© 2026 [ชื่อของคุณ] · Portfolio รายวิชา [ชื่อวิชา]</footer>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 

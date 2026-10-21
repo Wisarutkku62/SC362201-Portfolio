@@ -7,48 +7,69 @@
     <title>หน้าแรก | Portfolio ของ [ชื่อของคุณ]</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600&family=Anuphan:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;600;700&family=Kanit:wght@600;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <header>
-        <nav><span class="logo">[ชื่อของคุณ]</span><a class="menu active" href="index.html">หน้าแรก</a><a class="menu"
-                href="assignments.html">Assignment</a><a class="menu" href="labs.html">Lab</a><a class="menu"
-                href="project.html">Project</a><a class="menu" href="about.html">เกี่ยวกับฉัน</a></nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div>
-                <p>สวัสดีครับ ผมชื่อ</p>
-                <h1>[ชื่อ-นามสกุล]</h1>
-                <p class="role" id="typing"
-                    data-words="นักศึกษาสาขา [ชื่อสาขา]|ชอบเรียนรู้เรื่องใหม่ๆ|กำลังฝึกเขียนเว็บ">นักศึกษาสาขา
-                    [ชื่อสาขา]</p>
-                <p>แนะนำตัวสั้นๆ 2-3 ประโยค เช่น สิ่งที่สนใจ เป้าหมายในอนาคต
-                    และเว็บนี้รวบรวมผลงานทั้งหมดที่ทำมาตลอดการเรียนวิชานี้</p>
-                <a class="btn" href="project.html">ดูโปรเจกต์</a>
-                <a class="btn alt" href="about.html">รู้จักผมมากขึ้น</a>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">[ชื่อของคุณ]<small>Portfolio รายวิชา [ชื่อวิชา]</small></div>
+            <nav><a class="menu active" href="index.html"><span>01</span>หน้าแรก</a><a class="menu"
+                    href="assignments.html"><span>02</span>Assignment</a><a class="menu"
+                    href="labs.html"><span>03</span>Lab</a><a class="menu"
+                    href="project.html"><span>04</span>Project</a><a class="menu"
+                    href="about.html"><span>05</span>เกี่ยวกับฉัน</a></nav>
+            <p class="side-foot">© 2026 [ชื่อของคุณ]</p>
+        </aside>
+        <main class="content">
+            <div class="wrap">
+                <section class="hero">
+                    <div>
+                        <p class="eyebrow">Portfolio 2026</p>
+                        <h1>สวัสดี<br>ผมชื่อ <mark>[ชื่อ]</mark></h1>
+                        <p class="role" id="typing"
+                            data-words="นักศึกษาสาขา [ชื่อสาขา]|ชอบเรียนรู้เรื่องใหม่ๆ|กำลังฝึกเขียนเว็บ">นักศึกษาสาขา
+                            [ชื่อสาขา]</p>
+                        <p class="intro">แนะนำตัวสั้นๆ 2-3 ประโยค เช่น สิ่งที่สนใจ เป้าหมายในอนาคต
+                            และเว็บนี้รวบรวมผลงานทั้งหมดที่ทำมาตลอดการเรียนวิชานี้</p>
+                        <a class="btn" href="project.html">ดูโปรเจกต์</a><a class="btn alt"
+                            href="about.html">รู้จักผมมากขึ้น</a>
+                    </div>
+                    <div class="photo">ใส่รูปของคุณตรงนี้<span class="sticker">Hello!</span></div>
+                </section>
             </div>
-            <div class="photo">ใส่รูปของคุณตรงนี้<br>(แก้ใน index.html)</div>
-        </section>
-        <section class="shortcuts">
-            <a class="shortcut" href="assignments.html">
-                <h3>Assignment</h3>
-                <p>งานที่ได้รับมอบหมายทั้งหมด</p>
-            </a>
-            <a class="shortcut" href="labs.html">
-                <h3>Lab</h3>
-                <p>แล็บปฏิบัติการที่เรียนมา</p>
-            </a>
-            <a class="shortcut" href="project.html">
-                <h3>Project</h3>
-                <p>โปรเจกต์ประจำเทอมนี้</p>
-            </a>
-        </section>
-    </main>
-    <footer>© 2026 [ชื่อของคุณ] · Portfolio รายวิชา [ชื่อวิชา]</footer>
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span><span>ASSIGNMENT</span><span>★</span><span>LAB</span><span>★</span><span>PROJECT</span><span>★</span><span>PORTFOLIO</span><span>★</span>
+                </div>
+            </div>
+            <div class="wrap">
+                <section class="stats">
+                    <div class="stat"><b data-count="12">12</b><span>Assignment</span></div>
+                    <div class="stat"><b data-count="8">8</b><span>Lab</span></div>
+                    <div class="stat"><b data-count="1">1</b><span>Project ประจำเทอม</span></div>
+                </section>
+                <section class="bento">
+                    <a class="tile" href="assignments.html"><span class="num">01</span><span class="arrow">↗</span>
+                        <h3>Assignment</h3>
+                        <p>งานที่ได้รับมอบหมายทั้งหมด</p>
+                    </a>
+                    <a class="tile" href="labs.html"><span class="num">02</span><span class="arrow">↗</span>
+                        <h3>Lab</h3>
+                        <p>แล็บปฏิบัติการที่เรียนมา</p>
+                    </a>
+                    <a class="tile" href="project.html"><span class="num">03</span><span class="arrow">↗</span>
+                        <h3>Project</h3>
+                        <p>โปรเจกต์ประจำเทอมนี้</p>
+                    </a>
+                </section>
+            </div>
+            <footer>© 2026 [ชื่อของคุณ] · Portfolio รายวิชา [ชื่อวิชา]</footer>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 
