@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "Sarabun", "Noto Sans Thai", Tahoma, sans-serif;
+    font-family: "Anuphan", "Noto Sans Thai", Tahoma, sans-serif;
     background: #14102b;
     color: #f4f1ff;
     line-height: 1.7;
@@ -19,7 +19,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "Prompt", "Sarabun", Tahoma, sans-serif;
+    font-family: "Prompt", "Anuphan", Tahoma, sans-serif;
     line-height: 1.3;
 }
 
@@ -33,6 +33,7 @@ input:focus-visible {
     outline-offset: 3px;
 }
 
+/* แถบความคืบหน้าการเลื่อนหน้า (สร้างโดย script.js) */
 #progress {
     position: fixed;
     top: 0;
@@ -43,6 +44,7 @@ input:focus-visible {
     z-index: 100;
 }
 
+/* ===== เมนูด้านบน ===== */
 header {
     background: #1d1840;
     border-bottom: 3px solid #ff5fa2;
@@ -110,6 +112,7 @@ main {
     max-width: 60ch;
 }
 
+/* ===== หน้าแรก ===== */
 .hero {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -262,6 +265,7 @@ main {
     font-size: .95rem;
 }
 
+/* ===== ช่องค้นหา ===== */
 .search {
     width: 100%;
     max-width: 420px;
