@@ -6,55 +6,81 @@
     box-shadow: 12px 12px 0 #2f4bff;
     margin-bottom: 40px;
 }
-
+ 
 .project .cover {
     background: #ff4d2e;
     padding: 56px 40px;
     border-bottom: 4px solid #14161f;
 }
-
+ 
 .project .cover h2 {
     font-weight: 800;
     font-size: clamp(2.2rem, 5vw, 3.8rem);
     line-height: 1.05;
 }
-
+ 
 .project .cover p {
     font-size: 1.15rem;
     font-weight: 600;
     margin-top: 10px;
 }
-
+ 
+.project-shot {
+    position: relative;
+    min-height: 220px;
+    background: #2f4bff;
+    color: #fff;
+    border-bottom: 4px solid #14161f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+ 
+.project-shot span {
+    position: absolute;
+}
+ 
+.project-shot img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ 
 .project .body {
     padding: 36px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
-
+ 
 .project h3 {
     font-weight: 800;
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #2f4bff;
 }
-
+ 
 .project ul {
     padding-left: 22px;
 }
-
+ 
 .project li {
     margin-bottom: 6px;
 }
-
+ 
 @media (max-width: 900px) {
     .project .body {
         grid-template-columns: 1fr;
     }
-
+ 
     .project .cover,
     .project .body {
         padding-left: 24px;
         padding-right: 24px;
     }
+ 
 }
