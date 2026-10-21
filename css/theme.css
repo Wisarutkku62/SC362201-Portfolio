@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Anuphan", "Noto Sans Thai", Tahoma, sans-serif;
+    background: #f4efe6;
+    color: #14161f;
+    line-height: 1.7;
+    font-size: 17px;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.brand,
+.menu span,
+.eyebrow,
+.num,
+.stat b,
+.marquee,
+.sticker {
+    font-family: "Kanit", "Anuphan", Tahoma, sans-serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 4px solid #2f4bff;
+    outline-offset: 3px;
+}
+
+#progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 0;
+    background: #ff4d2e;
+    z-index: 100;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: #14161f;
+    color: #f4efe6;
+    padding: 36px 22px 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 1.7rem;
+    line-height: 1.15;
+    color: #ffe14d;
+}
+
+.brand small {
+    display: block;
+    font-family: "Anuphan", sans-serif;
+    font-weight: 400;
+    font-size: .85rem;
+    color: #a3a8c0;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.sidebar nav {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    color: #d3d6e6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background .2s, color .2s, transform .2s;
+}
+
+.menu span {
+    font-size: .85rem;
+    color: #ff4d2e;
+}
+
+.menu:hover {
+    background: #262a3b;
+    color: #fff;
+    transform: translateX(4px);
+}
+
+.menu.active {
+    background: #ffe14d;
+    color: #14161f;
+}
+
+.menu.active span {
+    color: #14161f;
+}
+
+.side-foot {
+    margin-top: auto;
+    font-size: .85rem;
+    color: #8a8fa8;
+}
+
+.content {
+    padding: 56px 56px 0;
+    min-width: 0;
+}
+
+.wrap {
+    max-width: 1100px;
+}
+
+.eyebrow {
+    color: #ff4d2e;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.page-title {
+    font-weight: 800;
+    font-size: clamp(2.8rem, 7vw, 5.6rem);
+    line-height: 1.05;
+    margin: 6px 0 14px;
+}
+
+mark {
+    background: #ffe14d;
+    color: #14161f;
+    padding: 0 .18em;
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+
+.page-sub {
+    max-width: 58ch;
+    margin-bottom: 32px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #14161f;
+    color: #f4efe6;
+    padding: 13px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 14px 14px 0;
+    box-shadow: 6px 6px 0 #ff4d2e;
+    transition: transform .15s, box-shadow .15s;
+}
+
+.btn:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 #ff4d2e;
+}
+
+.btn.alt {
+    background: #f4efe6;
+    color: #14161f;
+    border: 3px solid #14161f;
+    padding: 10px 25px;
+    box-shadow: 6px 6px 0 #2f4bff;
+}
+
+.btn.alt:hover {
+    box-shadow: 2px 2px 0 #2f4bff;
+}
+
+.chips span {
+    display: inline-block;
+    border: 3px solid #14161f;
+    background: #ffe14d;
+    border-radius: 99px;
+    padding: 1px 16px;
+    margin: 0 8px 10px 0;
+    font-weight: 600;
+    font-size: .92rem;
+}
+
+footer {
+    margin: 72px -56px 0;
+    background: #14161f;
+    color: #a3a8c0;
+    text-align: center;
+    padding: 28px 20px;
+    font-size: .92rem;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity .6s, transform .6s;
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: none;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        display: block;
+    }
+
+    .sidebar {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 16px;
+        z-index: 20;
+    }
+
+    .brand {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+
+    .brand small,
+    .side-foot,
+    .menu span {
+        display: none;
+    }
+
+    .sidebar nav {
+        margin: 0;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .menu {
+        padding: 8px 14px;
+        white-space: nowrap;
+    }
+
+    .content {
+        padding: 36px 20px 0;
+    }
+
+    footer {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
