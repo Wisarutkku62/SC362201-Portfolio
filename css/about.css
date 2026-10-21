@@ -17,21 +17,72 @@
     margin-top: 30px;
 }
 
-.about>div:first-child .box:first-child {
+.box-blue {
     background: #2f4bff;
     color: #fff;
 }
 
-.about>div:first-child .box:first-child h2 {
+.box-blue h2 {
     color: #ffe14d;
 }
 
-.about>div:first-child .box:first-child .info li {
+.box-blue .info li {
     border-bottom-color: #8a9bff;
 }
 
-.about>div:first-child .box:first-child .info b {
+.box-blue .info b {
     color: #ffe14d;
+}
+
+.profile {
+    padding: 0;
+    margin: 0 0 30px;
+    overflow: hidden;
+    background: #ffe14d;
+}
+
+.profile-photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background: #ff4d2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.profile-photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile figcaption {
+    padding: 16px 24px;
+    border-top: 4px solid #14161f;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile figcaption strong {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.profile-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-photos .profile-photo+.profile-photo {
+    background: #2f4bff;
+    color: #fff;
+    border-left: 4px solid #14161f;
 }
 
 .box h2 {

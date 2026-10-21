@@ -69,6 +69,7 @@ input:focus-visible {
     font-size: 1.7rem;
     line-height: 1.15;
     color: #ffe14d;
+    text-decoration: none;
 }
 
 .brand small {
@@ -205,7 +206,7 @@ mark {
     font-size: .92rem;
 }
 
-footer {
+.footer {
     margin: 72px -56px 0;
     background: #14161f;
     color: #a3a8c0;
