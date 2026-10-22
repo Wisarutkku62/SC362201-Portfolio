@@ -1,0 +1,36 @@
+table {
+      width: 92%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    th {
+      font-weight: bold;
+      color: grey;
+      text-align: center;
+      border-bottom: 2px solid black;
+      padding: 10px;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+      color: #777;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: lightgrey;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: white;
+    }
+
+    tbody tr:hover {
+      background-color: gray;
+    }
+
+    tbody tr:hover td {
+      color: white;
+    }
