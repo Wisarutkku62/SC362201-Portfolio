@@ -249,6 +249,10 @@
     padding: 1px 12px;
     border-radius: 99px;
 }
+.text-contact{
+    font-size: .75rem;
+    font-weight: 1000;
+}
 
 @media (max-width: 900px) {
     .about {
