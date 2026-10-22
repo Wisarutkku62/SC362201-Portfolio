@@ -141,6 +141,95 @@
     justify-content: center;
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 3px solid #14161f;
+    border-radius: 14px;
+    transition: transform .2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04) rotate(-1deg);
+}
+
+.box.contact {
+    background: #ffe14d;
+    margin-top: 30px;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #fff;
+    color: #14161f;
+    text-decoration: none;
+    font-weight: 600;
+    border: 3px solid #14161f;
+    border-radius: 14px;
+    padding: 12px 16px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.contact-item:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0 #14161f;
+}
+
+.ci-icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    background: #ffe14d;
+    border: 3px solid #14161f;
+    border-radius: 12px;
+    transition: background .2s;
+}
+
+.ci-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.contact-item:hover .ci-icon {
+    background: #ff4d2e;
+}
+
+.ci-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.ci-label {
+    align-self: flex-start;
+    background: #14161f;
+    color: #f4efe6;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: 1px 12px;
+    border-radius: 99px;
+}
+
 @media (max-width: 900px) {
     .about {
         grid-template-columns: 1fr;
