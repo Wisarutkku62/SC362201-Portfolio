@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Font CSS</title>
+    <style>
+        body {
+            background-color: azure;
+            font-family: sans-serif;
+        }
+
+        .title {
+            display: inline-block;
+            color: cadetblue;
+            font-weight: bold;
+            text-decoration: underline dashed;
+            transition: 1.5s;
+        }
+
+        .title:hover {
+            text-shadow: 5px 1px 10px yellow;
+            font-size: larger;
+        }
+
+        .t1 {
+            font-family: sans-serif;
+            border: 5px solid darkblue;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .t2 {
+            line-height: 20px;
+            text-indent: 45px;
+        }
+
+        .t2::first-letter {
+            color: white;
+            background-color: red;
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .t2::first-line {
+            background-color: yellow;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .t3 {
+            height: 100px;
+            width: 400px;
+            overflow-y: scroll;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="title">LAB 5 - CSS Font</p>
+    <input type="text" class="t1" value="Lorem ipsum, dolor sit amet consectetur adipisicing elit.">
+    <p class="t2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, consequuntur? Eius, natus. Nihil
+        natus sint ad id blanditiis veniam veritatis alias et temporibus, maxime, sed illo eos placeat accusamus unde
+        suscipit nisi enim, fugit laudantium dolor dolores. Deserunt esse vitae rerum, repudiandae voluptates suscipit
+        facere quas. Tempore deserunt, eius perferendis fugit repellat iure explicabo architecto, nobis nisi id quo
+        aperiam eaque, labore quos maiores laboriosam reprehenderit voluptatem numquam illo provident. Blanditiis minima
+        sit porro quasi qui odio! Asperiores quos, molestiae mollitia molestias quibusdam voluptatum adipisci, quia
+        accusamus dolores accusantium officia eaque laboriosam nam assumenda. Placeat corporis non pariatur laudantium!
+        Dicta animi et numquam vel ipsa ullam, quisquam nemo, excepturi, laboriosam omnis vero. Aliquam, illo iste.
+        Culpa laborum ducimus, qui iusto eveniet ullam aliquam eum dolorum tenetur illum nulla veritatis, cumque
+        inventore cupiditate dolorem est nihil a, ipsum quia doloribus delectus. Adipisci modi iure delectus aliquam
+        recusandae! Molestiae, tenetur tempora. Dolore mollitia, officia praesentium accusamus itaque tenetur, officiis
+        repellat dicta voluptate ducimus non fugit veniam nulla quas aperiam ab, asperiores eveniet! Quisquam tempora
+        sapiente reprehenderit eveniet doloremque exercitationem pariatur magni, modi libero numquam cupiditate quidem
+        deleniti nemo aspernatur fugiat nisi hic? Porro, molestiae? Quas nobis molestias natus autem! Necessitatibus,
+        autem recusandae?</p>
+    <div class="t3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quis nam, nobis autem culpa provident
+        impedit labore omnis amet nulla laboriosam ab vitae magnam nemo illum at. Sint, officia cumque fugiat quos eius
+        quis debitis nulla reprehenderit rem obcaecati deleniti praesentium magnam culpa alias aperiam necessitatibus,
+        corporis officiis sunt? Ipsam quibusdam earum eligendi dicta quas facere quos doloremque nam itaque pariatur?
+        Doloremque, praesentium. Mollitia praesentium veniam ratione asperiores debitis totam deserunt saepe distinctio
+        facilis magni quis sunt doloremque, incidunt qui nobis pariatur animi consequatur ut, assumenda quae et. Cumque
+        voluptate totam earum molestiae, dolores reprehenderit nobis incidunt recusandae soluta sequi?</div>
+</body>
+
+</html>

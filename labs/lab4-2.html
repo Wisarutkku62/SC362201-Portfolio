@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04-02</title>
+    <style>
+        .content {
+            display: flex;
+            margin-right: 100px;
+            gap: 10px;
+        }
+        .content-box1 {
+            width: 250px;
+            height: 200px;
+            padding: 20px;
+            background: linear-gradient(to top, rgb(248, 252, 17), rgb(255, 0, 0));
+            color: white;
+            text-align: center;
+            margin: 10px 10px;
+        }
+        .content-box1:hover {
+            width: 300px;
+            transition: 2s;
+            box-shadow: 10px 10px 5px #fa0000;
+            cursor: pointer;
+        }
+        .content-box2 {
+            width: 250px;
+            height: 200px;
+            padding: 20px;
+            background: linear-gradient(to left, rgb(255, 253, 118), rgb(255, 126, 244));
+            color: white;
+            text-align: center;
+            margin: 10px 10px;
+        }
+        .content-box2:hover {
+            width: 300px;
+            transition: 2s;
+            box-shadow: 10px 10px 5px #ff68ff;
+            cursor: pointer;
+        }
+        .content-box3 {
+            width: 250px;
+            height: 200px;
+            padding: 20px;
+            background: linear-gradient(to top, rgb(60, 16, 255), rgb(255, 252, 104));
+            color: white;
+            text-align: center;
+            margin: 10px 10px;
+
+        }
+        .content-box3:hover {
+            width: 300px;
+            transition: 2s;
+            box-shadow: 10px 10px 5px #0602eb;
+            cursor: pointer;
+        }
+        .multi_col {
+            -webkit-column-count: 4;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 4;
+            /* Firefox */
+            column-count: 4;
+        }
+        input[type=text]:enabled {
+            background: rgb(3, 248, 3);
+        }
+
+        input[type=text]:disabled {
+            background: rgb(255, 0, 0, 0.3);
+        }
+        .submit {
+            background-color: rgb(150, 150, 255, 0.3);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-box1">
+            <h1>
+                my Box <br><br>
+                gradient shadow <br>
+                and tarnsition
+            </h1>
+        </div>
+        <div class="content-box2">
+            <h1>
+                my Box <br><br>
+                gradient shadow <br>
+                and tarnsition
+            </h1>
+        </div>
+        <div class="content-box3">
+            <h1>
+                my Box <br><br>
+                gradient shadow <br>
+                and tarnsition
+            </h1>
+        </div>
+    </div>
+    <div class="multi_col">
+        Web design encompasses many different skills and disciplines in the production and
+        maintenance of websites. The different areas of web design include web graphic design;
+        user interface design (UI design); authoring, including standardised code and proprietary
+        software; user experience design (UX design); and search engine optimization. Often many
+        individuals will work in teams covering different aspects of the design process, although
+        some designers will cover them all. [1] The term "web design" is normally used to describe
+        the design process relating to the front-end (client side) design of a website including
+        writing markup. Web design partially overlaps web engineering in the broader scope of
+        web development. Web designers are expected to have an awareness of usability and be
+        up to date with web accessibility guidelines.
+    </div>
+    <form action="">
+        First name: <input type="text" value=""><br>
+        Last name: <input type="text" value=""><br>
+        Age: <input type="text" disabled="disabled" value="20">
+        <button type="submit" class="submit">Submit</button>
+    </form>
+</body>
+
+</html>

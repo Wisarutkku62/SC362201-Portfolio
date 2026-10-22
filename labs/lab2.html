@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab #2 - Rainbow Canvas & Datalist</title>
+  <style>
+  
+    #rainbowCanvas {
+      border: 1px solid #000000;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      width: 400px;
+    }
+
+    img {
+      width: 400px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+ 
+    <canvas id="rainbowCanvas" width="400" height="120">
+
+    </canvas>
+
+    <img src="939.jpg" alt="รูปภาพตัวอย่าง">
+
+    <input list="branches" id="branchInput" placeholder="เลือกหรือพิมพ์ชื่อสาขา...">
+    <datalist id="branches">
+      <option value="สาขาวิชาวิทยาการคอมพิวเตอร์">
+      <option value="สาขาวิชาเทคโนโลยีสารสนเทศ">
+      <option value="สาขาวิชาภูมิสารสนเทศศาสตร์">
+      <option value="สาขาวิชาปัญญาประดิษฐ์">
+      <option value="สาขาวิชาการรักษาความมั่นคงปลอดภัยไซเบอร์">
+    </datalist>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('rainbowCanvas');
+    const ctx = canvas.getContext('2d');
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+    
+    const stripeHeight = canvas.height / colors.length;
+
+    colors.forEach((color, index) => {
+      ctx.fillStyle = color;
+      ctx.fillRect(0, index * stripeHeight, canvas.width, stripeHeight);
+    });
+  </script>
+
+</body>
+</html>
