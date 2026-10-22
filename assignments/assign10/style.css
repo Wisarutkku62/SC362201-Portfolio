@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', sans-serif, system-ui;
+  color: #2c3e35;
+  background-color: #f4f8f5;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 16px 0;
+  box-shadow: 0 2px 10px rgba(46, 125, 50, 0.05);
+  border-bottom: 1px solid #e2ece5;
+}
+
+.logo {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo>p {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1b3a2b;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #526e60;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+}
+
+.head {
+  background-color: #e8f2ea;
+  padding: 80px 0 90px;
+}
+
+.head .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column; /* กำหนดให้ Element ลูกเรียงต่อกันเป็น "แนวตั้ง" จากบนลงล่าง */
+  align-items: flex-start; /* จัดให้ Element ลูกทั้งหมดเรียงชิด "ซ้าย" */
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  color: #1b3a2b;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.head p {
+  color: #4a6657;
+  font-size: 1.05rem;
+  max-width: 500px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #1b5e20;
+}
+
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* แบ่งแถวเป็น 3 คอลัมน์ ความกว้างเท่ากันทั้งหมด */
+  gap: 24px; /* ระยะห่างระหว่างช่องการ์ดแต่ละใบ (ทั้งแนวนอนและแนวตั้ง) 24px */
+  counter-reset: card-counter; /* สร้าง/รีเซ็ตตัวนับชื่อ "card-counter" ให้เริ่มจาก 0 ใหม่ใน section นี้ */
+}
+
+section>.container {
+  grid-column: 1 / -1; /* ขยายกล่องให้กว้างครอบคลุมตั้งแต่คอลัมน์แรกถึงคอลัมน์สุดท้ายของ Grid (กินพื้นที่เต็มแถว) */
+  display: flex;
+  flex-direction: column-reverse; /* จัดเรียง Element ลูกเป็นแนวตั้ง แต่ "สลับลำดับจากล่างขึ้นบน" */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subtitle-section {
+  color: #2e7d32;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.title-section {
+  font-size: 2rem;
+  color: #1b3a2b;
+  font-weight: 700;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 24px 40px;
+  position: relative; /* กำหนดเป็นจุดอ้างอิงตำแหน่ง เพื่อให้ตัวเลขลำดับ (::after) วางพิกัดเทียบกับกล่องนี้ */
+  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.05);
+  border: 1px solid #e2ece5;
+  display: flex;
+  flex-direction: column;
+  counter-increment: card-counter; /* เพิ่มค่าตัวนับชื่อ "card-counter" ขึ้นทีละ 1 ทุกๆ ครั้งที่มีการ์ดใบใหม่ */
+}
+
+.title-card {
+  font-size: 1.15rem;
+  color: #1b3a2b;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #526e60;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card::after {
+  content: "0" counter(card-counter); /* สร้างเนื้อหาแสดงผลเป็นเลข "0" นำหน้า ตามด้วยลำดับจากตัวนับ (เช่น 01, 02, 03) */
+  position: absolute; /* วางตำแหน่งแบบลอยตัวอิสระ อ้างอิงพิกัดกับกล่องแม่ (.card) ที่มี position: relative */
+  bottom: 16px; /* วางตำแหน่งให้อยู่ห่างจากขอบล่างของการ์ด 16px */
+  right: 20px; /* วางตำแหน่งให้อยู่ห่างจากขอบขวาของการ์ด 20px */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c4d7cb;
+}
+
+.footer {
+  background-color: #132e22;
+  color: #ffffff;
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1200px) and (min-width: 376px) { /* สำหรับหน้าจอที่มีความกว้างระหว่าง 376px ถึง 1200px  แท็บเล็ต หรือ โน้ตบุ๊กจอเล็ก */
+  section {
+    grid-template-columns: repeat(2, 1fr); /* ปรับเลย์เอาต์การ์ดใน section ให้แสดงเป็น 2 คอลัมน์ความกว้างเท่ากัน */
+  }
+
+  .head .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+/* สำหรับหน้าจอที่มีความกว้างไม่เกิน 660px */
+@media (max-width: 660px) {
+  .logo {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.85rem;
+  }
+
+  section {
+    grid-template-columns: 1fr; /* บังคับการ์ดเรียงซ้อนลงมาเป็น 1 คอลัมน์แนวตั้งเต็มความกว้าง */
+  }
+
+  .head .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}

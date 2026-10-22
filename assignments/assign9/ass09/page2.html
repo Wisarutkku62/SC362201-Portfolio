@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 9</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"> ActNow Thailand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="details.html">10 วิธีแก้วิกฤตโลกร้อน</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner ส่วนหัว -->
+  <div class="bg-light py-4 border-bottom">
+    <div class="container text-center">
+      <h1 class="fw-bold text-success">เจาะลึก 10 วิธีแก้วิกฤตโลกร้อนด้วยตัวเรา</h1>
+      <p class="text-secondary mb-0">เริ่มต้นปฏิบัติการ ActNow เพื่อสร้างอนาคตคาร์บอนเป็นศูนย์</p>
+    </div>
+  </div>
+
+  <!-- Content: การใช้ Bootstrap Grid แสดงรายการ 10 ข้อ -->
+  <main class="container my-5">
+    <!-- การจัดวาง Layout: col-12 บน Mobile (การแสดงผลแนวตั้ง 1 คอลัมน์) / col-md-6 บน PC (การแบ่ง 2 คอลัมน์) -->
+    <div class="row g-4">
+
+      <!-- ข้อที่ 1 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">1. ประหยัดพลังงานที่บ้าน</h4>
+          <p class="text-secondary mb-0">ปรับระดับการทำความร้อน/เย็นให้ต่ำลง เปลี่ยนมาใช้หลอดไฟ LED เครื่องใช้ไฟฟ้าประหยัดพลังงาน ซักผ้าด้วยน้ำเย็น หรือตากผ้าแทนการใช้เครื่องอบผ้า</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 2 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">2. เดิน ปั่นจักรยาน หรือใช้ระบบขนส่งสาธารณะ</h4>
+          <p class="text-secondary mb-0">การเดินหรือปั่นจักรยานแทนการขับรถน้ำมันช่วยลดก๊าซเรือนกระจก และทำให้สุขภาพแข็งแรง หากต้องเดินทางไกลให้เลือกใช้รถไฟหรือรถประจำทาง</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 3 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">3. รับประทานผักให้มากขึ้น</h4>
+          <p class="text-secondary mb-0">เพิ่มการทานผัก ผลไม้ ธัญพืช ถั่ว และลดเนื้อสัตว์ลง เนื่องจากกระบวนการผลิตอาหารจากพืชใช้พลังงาน ดิน และน้ำน้อยกว่าการทำปศุสัตว์มาก</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 4 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">4. เลือกวิธีเดินทาง</h4>
+          <p class="text-secondary mb-0">เครื่องบินปล่อยก๊าซเรือนกระจกมหาศาล การลดบินระยะไกลโดยเปลี่ยนมาใช้วิธีประชุมออนไลน์หรือเดินทางด้วยรถไฟเป็นวิธีลดคาร์บอนที่เห็นผลเร็วที่สุด</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 5 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">5. รับประทานอาหารให้หมด</h4>
+          <p class="text-secondary mb-0">การทิ้งอาหารเท่ากับทิ้งทรัพยากรที่ใช้ผลิต และขยะอาหารที่บูดเน่าจะปล่อยก๊าซมีเทนรุนแรง ควรทานอาหารให้หมดและนำเศษอาหารไปทำปุ๋ยหมัก</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 6 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">6. ลด ใช้ซ้ำ ซ่อมแซม และรีไซเคิล</h4>
+          <p class="text-secondary mb-0">สินค้าที่เราซื้อก่อให้เกิดคาร์บอนในทุกกระบวนการผลิต ควรซื้อของให้น้อยลง เลือกซื้อของมือสอง ซ่อมแซมสิ่งของชำรุด และรีไซเคิลก่อนทิ้ง</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 7 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">7. เปลี่ยนแหล่งพลังงานในบ้าน</h4>
+          <p class="text-secondary mb-0">สอบถามผู้ให้บริการไฟฟ้า หรือพิจารณาเปลี่ยนไปใช้พลังงานหมุนเวียน เช่น ติดตั้งแผงโซลาร์เซลล์บนหลังคาบ้านเพื่อผลิตไฟฟ้าสะอาด</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 8 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">8. เปลี่ยนไปใช้รถยนต์ไฟฟ้า</h4>
+          <p class="text-secondary mb-0">หากวางแผนซื้อรถใหม่ รถยนต์ไฟฟ้า (EV) ช่วยลดมลพิษทางอากาศและปล่อยก๊าซเรือนกระจกน้อยกว่ารถยนต์ใช้น้ำมันอย่างมีนัยสำคัญ</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 9 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">9. เลือกผลิตภัณฑ์ที่เป็นมิตรต่อสิ่งแวดล้อม</h4>
+          <p class="text-secondary mb-0">สนับสนุนสินค้าท้องถิ่นตามฤดูกาล และอุดหนุนบริษัทที่มีนโยบายรับผิดชอบต่อสิ่งแวดล้อมและมุ่งลดขยะในกระบวนการผลิต</p>
+        </div>
+      </div>
+
+      <!-- ข้อที่ 10 -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 border rounded-3 bg-white h-100 shadow-sm border-start border-4 border-success">
+          <h4 class="fw-bold text-success mb-2">10. เป็นกระบอกเสียง</h4>
+          <p class="text-secondary mb-0">ร่วมส่งเสียงเรียกร้องต่อผู้นำ และกระตุ้นเตือนให้ผู้คน ชุมชน มหาวิทยาลัย และภาคธุรกิจลงมือทำอย่างเร่งด่วนเพื่อเป้าหมาย Net Zero</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; ActNow Campaign - อ้างอิงเนื้อหาจาก thailand.un.org</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

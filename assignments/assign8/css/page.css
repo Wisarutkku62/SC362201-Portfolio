@@ -1,0 +1,259 @@
+/* HOME HERO SECTION ส่วนหัวของหน้า Home */
+.home-hero {
+  display: flex;
+  gap: 40px;  /* ระยะห่างระหว่างข้อความกับรูปภาพ */
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.home-hero .text, /* ให้ส่วนข้อความและส่วนรูปภาพแบ่งพื้นที่เท่า ๆ กัน */
+.home-hero .art { 
+  flex: 1; 
+}
+
+.home-hero h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+/* กำหนดสีข้อความคำอธิบาย */
+.home-hero p {
+  color: var(--muted);
+}
+/* แถวสำหรับวางปุ่ม */
+.home-hero .btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/*HOME CARD การจัดรูปแบบ Card ในหน้า Home*/
+.home-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-card {
+  flex: 1 1 260px;
+  padding: 20px;
+}
+
+/* ป้าย Tag ที่อยู่ใน Card */
+.home-card .tag {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: .8rem;
+  margin-bottom: 10px;
+}
+
+
+.home-card p {
+  color: var(--muted);
+}
+
+/*RESPONSIVE HOME HERO ปรับหน้าเว็บเมื่อหน้าจอเล็กกว่า 800px*/
+@media (max-width: 800px) {
+  .home-hero {
+    flex-direction: column;
+  }
+}
+
+.split-row {
+  display: flex;  /* จัดเนื้อหาในแนวนอน */
+  gap: 20px;  /* ระยะห่างระหว่างแต่ละฝั่ง */
+  margin-bottom: 30px;
+}
+
+/* กล่อง Code แต่ละฝั่ง */
+.split-row .code-box {
+  flex: 1;  /* แบ่งพื้นที่ให้แต่ละกล่องเท่า ๆ กัน */
+  min-width: 0;   /* ป้องกันเนื้อหาล้นออกจากกล่อง */
+}
+/*CODE BOX FILE NAME ชื่อไฟล์ที่แสดงเหนือ Code*/
+.code-box .fname {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-bottom: 6px;
+}
+/*STEPS ส่วนแสดงขั้นตอนการทำงาน*/
+.steps {
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+/* แต่ละรายการของขั้นตอน */
+.steps li {
+  margin-bottom: 16px;
+  color: var(--text);
+}
+/* ตัวอักษรหนาภายในขั้นตอน */
+.steps li strong {
+  display: block;
+  margin-bottom: 4px;
+}
+/* คำอธิบายของแต่ละขั้นตอน */
+.steps li span {
+  color: var(--muted);
+}
+
+/*COMPARE TABLE ตารางสำหรับเปรียบเทียบข้อมูล */
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+/* กำหนดรูปแบบของหัวตารางและช่องข้อมูล */
+table.compare th,
+table.compare td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top; /* จัดข้อความให้อยู่ด้านบน */
+}
+
+table.compare th {
+  background: var(--panel);
+}
+
+/* ช่องที่มี class="win"
+   ใช้เน้นข้อมูลที่เป็นข้อดีหรือผู้ชนะ */
+table.compare td.win {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* FIGURE ส่วนแสดงรูปภาพพร้อมคำอธิบาย*/
+.figure {
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* รูปภาพภายใน Figure */
+.figure img {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+
+.figure figcaption {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-top: 8px;
+}
+
+/*RESPONSIVE SPLIT ROW ปรับ Split Row เมื่อหน้าจอเล็กกว่า 700px*/
+@media (max-width: 700px) {
+  .split-row {
+    /* เปลี่ยนจาก 2 คอลัมน์เป็นแนวตั้ง */
+    flex-direction: column;
+  }
+}
+
+/*LIBRARY LAYOUT โครงสร้างหน้าห้องสมุด / Library*/
+
+.lib-layout {
+  display: flex;
+  gap: 30px;
+}
+
+/*LIBRARY SIDEBAR แถบเมนูด้านข้าง */
+
+.lib-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  padding: 16px;
+  align-self: flex-start;
+}
+
+/* รายการเมนูใน Sidebar */
+.lib-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lib-sidebar a {
+  display: block;
+  padding: 6px 8px;
+  color: var(--muted);
+  border-radius: 6px;
+}
+
+/* เมื่อเอาเมาส์ไปวางบนลิงก์ */
+.lib-sidebar a:hover {
+  color: var(--text);
+}
+
+
+/* เมนูที่กำลังเปิดอยู่ */
+.lib-sidebar a.current {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.lib-main {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/*SHELF ส่วนแสดงหมวดหมู่ / ชั้นหนังสือ */
+.shelf {
+  margin-bottom: 36px;
+  padding: 14px;
+  margin-left: -14px;
+  border-left: 3px solid transparent;
+  border-radius: 8px;
+  transition: background .25s ease, border-color .25s ease;
+  scroll-margin-top: 20px;
+}
+
+/* Shelf ที่ถูกเลือก หรือเป็น Target */
+.shelf.is-active,
+.shelf:target {
+  background: rgba(166, 227, 161, 0.08);
+  border-left-color: var(--accent);
+}
+
+/*SHELF GRID ตารางสำหรับวาง Card */
+.shelf-grid {
+  display: flex;
+  flex-wrap: wrap;   /* อนุญาตให้ Card ขึ้นบรรทัดใหม่ */
+  gap: 14px;
+}
+
+/*SELECTOR CARD Card สำหรับแสดง Selector */
+.selector-card {
+  flex: 1 1 260px;  /* กำหนดขนาดเริ่มต้นของ Card */
+  padding: 16px 18px;
+}
+/* บรรทัด Code ภายใน Selector Card */
+.selector-card .code-line {
+  font-family: "Courier New", monospace;
+  margin: 0 0 8px;
+}
+
+/* Paragraph ภายใน Selector Card */
+.selector-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/*RESPONSIVE LIBRARY ปรับ Library เมื่อหน้าจอเล็กกว่า 800px*/
+@media (max-width: 800px) {
+  .lib-layout {
+    /* เปลี่ยน Sidebar และ Main
+       จากแนวนอนเป็นแนวตั้ง */
+    flex-direction: column;
+  }
+  .lib-sidebar {
+     /* Sidebar เปลี่ยนเป็นเต็มความกว้าง */
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="css/ass12.css">
+</head>
+<body>
+    <div class="form-card">
+        <h2 class="form-title">แบบฟอร์มลงทะเบียน</h2>
+        <p class="form-subtitle">กรุณากรอกข้อมูลตามช่องด้านล่างให้ครบถ้วน</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">ชื่อ - นามสกุล <span class="required">*</span></label>
+                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="เช่น นายสมชาย ใจดี"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">อีเมล <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com"
+                    required>
+
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์ <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="0812345678" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">วันเกิด <span class="required">*</span></label>
+                    <input type="date" id="dob" name="dob" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>เพศ <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" required> ชาย
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female"> หญิง
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="other"> อื่นๆ
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">สาขาวิชา <span class="required">*</span></label>
+                    <select id="department" name="department" class="form-control" required>
+                        <option value="" disabled selected>-- กรุณาเลือกสาขาวิชา --</option>
+                        <option value="cs">วิทยาการคอมพิวเตอร์</option>
+                        <option value="it">เทคโนโลยีสารสนเทศ</option>
+                        <option value="gis">ภูมิสารสนเทศศาสตร์</option>
+                        <option value="cy">ความปลอดภัยมั่นคงไซเบอร์</option>
+                        <option value="ai">ปัญญาประดิษฐ์</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">แนบไฟล์เอกสาร</label>
+                    <input type="file" id="file" name="file" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">ที่อยู่ปัจจุบัน</label>
+                    <textarea id="address" name="address" class="form-control"
+                        placeholder="กรอกที่อยู่ของคุณที่นี่"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            ฉันยอมรับเงื่อนไขและข้อตกลง <span class="required">*</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button type="reset" class="btn btn-reset">ล้างข้อมูล</button>
+                    <button type="submit" class="btn btn-submit">ส่งข้อมูล</button>
+                </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
