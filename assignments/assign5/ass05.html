@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="head">CSS font-size : A Definitive Font-Sizing Guide
+</h1>
+<p class="text">Font sizing in CSS sounds as though it should be easy. Until you try it. Many developers use the force; they tinker with the CSS font-size property until it looks right only to find it’s different in another browser. A little understanding can go a long way…
+</p>
+<h2 class="h1">The font-size Property</h2>
+<p class="text">The font-size property can be set for any HTML tag (even if it would not normally contain textual content like br). It can be assigned a variety of absolute, relative, or length size parameters.
+An element will inherit the font-size of its parent unless you override it. This is especially important when you specify relative sizes.
+</p>
+<h2 class="h1">Absolute Font Sizing Keywords</h2>
+<p class="text">Several absolute font-sizing keywords are available. The font size is determined from a browser preset and the element will not inherit its parent’s size.
+</p>
+<ul class="font_size">
+    <li class="xx">font-size: xx-small;
+</li>
+    <li class="x">font-size: x-small;</li>
+    <li class="s">font-size: small;
+</li>
+    <li class="m">font-size: medium;
+</li>
+    <li class="l">font-size: large;
+</li>
+    <li class="xl">font-size: x-large;
+</li>
+    <li class="xxl">font-size: xx-large;</li>
+</ul>
+<p class="text">Although most browsers support these keywords, the exact sizes will differ. They are a fairly crude method of font sizing and are generally avoided by most developers.</p>
+<h2 class="h1">Relative Font Sizing Keywords</h2>
+<p class="text">Two relative font-sizing keywords are available. The font is sized according to its parent element:
+</p>
+<ul class="font-size">
+    <li class="size">font-size: smaller;</li>
+    <li class="size">font-size: larger;</li>
+</ul>
+<p class="text">For example, if the parent has a font size of ‘medium’, a value of ‘larger’ will set the element to ‘large’. Other font units are normally altered by a factor of around 1.2 but, again, there is no standard and browser results will differ.
+</p>
+<h2 class="h1">Absolute Lengths</h2>
+<p class="text">The font-size property can be assigned an absolute length:
+</p>
+<ul class="font-size">
+    <li class="size">mm: millimeters, e.g. 10mm.</li>
+    <li class="size">cm: centimeters, e.g. 1cm ( = 10mm).</li>
+    <li class="size">in: inches, e.g. 0.39in ( ~= 10mm).</li>
+    <li class="size">pt: point, where 1pt is generally assumed to be 1/72 inch e.g. 12pt.</li>
+    <li class="size">pc: pica, where 1pc is 12pt</li>
+    <li class="size">px: pixel, e.g. 14px.</li>
+</ul>
+<p class="text">In general, there are issues with all these measurement units. Millimeters, centimeters and inches are inaccurate for a screen-based medium. Points and picas are unreliable since systems can use different dpi settings. Pixel appears to be the most suitable, but it can lead to accessibility issues because the text cannot be resized in IE.
+</p>
+<h2 class="h1">Relative Lengths</h2>
+<p class="text">The font-size property can be assigned a unit that it relative to its parent’s font size:</p>
+<ul>
+    <li class="size">em: 1em is equivalent to the current font size, so 2em is twice as large.</li>
+    <li class="size">%: 100% is equivalent to the current font size, so 200% is twice as large.</li>
+    <li class="size">ex: 1ex is equivalent to the height of the letter ‘x’ in the current font.</li>
+</ul>
+<p class="text">Few developers use ‘ex’, but it can be useful in some situations where you need fine-grained font sizes, e.g. 1ex rather than 0.525em.Percentage and ’em’ sizes are equivalent, e.g. 50% = 0.5em, 100% = 1em, 120% = 1.2em, etc. Some browsers exhibit subtle differences but it’s rarely a major problem. If you want to save every byte, you could choose the shortest definition, i.e. 50% is shorter than 0.5em and 1em is shorter than 100%.</p>
+<h1 class="head">20 Best Google Web Fonts
+</h1>
+<p class="text">Top recommended Google Web Fonts Here you can find a selection of fonts we’ve chosen, in part due to their aesthetic qualities, but above all, their functionality. As well as families with many styles and weights, you’ll find fonts that are optimized for interfaces, UI Optimized web fonts, and others that are especially legible in paragraphs, or particularly comfortable for reading on mobile and legible on any device - be it smartphone, desktop or tablet. To discover more examples of free fonts, take a look at our collection of Free Fonts, containing a wide variety of free typefaces.
+</p>
+<h2 class="h1">JetBrains Mono - Google Font by Google Fonts</h2>
+<img src="img\jetbrains.jpg" alt="jetbrains" class="image">
+<h2 class="h1">Inter - Google Font by Google Fonts</h2>
+<img src="img\inter.jpg" alt="inter" class="image">
+<h2 class="h1">Manrope - Google Font by Google Fonts</h2>
+<img src="img\manrope.jpg" alt="manrope" class="image">
+<h2 class="h1">Epilogue - Google Font by Google Fonts</h2>
+<img src="img\epilogue.jpg" alt="epilogue" class="image">
+<a href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html" class="button">See Detail</a>
+<footer class="footer">
+        <p>© 2026 683380054-2 Wisarut Khruealun</p>
+    </footer>
+</body>
+</html>

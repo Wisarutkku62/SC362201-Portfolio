@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment07 — External Style Sheet</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="index.html">Assignment07</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="page1.html">External CSS</a></li>
+      <li><a href="page2.html">Selectors</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <h1>External Style Sheet</h1>
+  <p class="muted">An external style sheet is a separate .css file that holds all your styling rules, linked into an HTML page with a single &lt;link&gt; tag. It's the setup used by almost every real website, including this one.</p>
+
+  <div class="split-row">
+    <div class="code-box panel">
+      <p class="fname">index.html</p>
+      <pre>&lt;head&gt;
+  &lt;link rel="stylesheet"
+        href="css/style.css"&gt;
+&lt;/head&gt;</pre>
+    </div>
+    <div class="code-box panel">
+      <p class="fname">css/style.css</p>
+      <pre>nav {
+  display: flex;
+  gap: 16px;
+}</pre>
+    </div>
+  </div>
+
+  <figure class="figure">
+    <img src="img/img2.png" alt="Diagram showing index.html linking to css/style.css via a link tag with rel stylesheet and href attributes, with an arrow labeled loads">
+    <figcaption>fig. 1 — the browser reads the &lt;link&gt;, fetches style.css, and applies its rules to index.html</figcaption>
+  </figure>
+
+  <h2>How to set it up</h2>
+  <ol class="steps">
+    <li>
+      <strong>Create a .css file</strong>
+      <span>Make a new file such as style.css, usually kept in its own css/ folder next to your HTML pages.</span>
+    </li>
+    <li>
+      <strong>Write your rules there</strong>
+      <span>Every rule follows the same shape: a selector, then declarations in curly braces — no &lt;style&gt; tags needed in this file.</span>
+    </li>
+    <li>
+      <strong>Link it from the HTML head</strong>
+      <span>Add &lt;link rel="stylesheet" href="css/style.css"&gt; inside &lt;head&gt;. The path in href must match where the file actually lives.</span>
+    </li>
+  </ol>
+
+  <figure class="figure">
+    <img src="img/img1.png" alt="Three file examples side by side showing inline, internal and external CSS">
+    <figcaption>fig. 2 — the same color change written three different ways: inline, internal, and external</figcaption>
+  </figure>
+
+  <h2>Inline vs internal vs external</h2>
+  <p class="muted">All three ways to write CSS produce the same result on screen, but they differ in where the code lives and how easy it is to reuse.</p>
+  <table class="compare">
+    <tr>
+      <th>Method</th>
+      <th>Where it's written</th>
+      <th>Applies to</th>
+      <th>Best for</th>
+    </tr>
+    <tr>
+      <td>Inline</td>
+      <td>style attribute</td>
+      <td>One element</td>
+      <td>Quick one-off tests</td>
+    </tr>
+    <tr>
+      <td>Internal</td>
+      <td>&lt;style&gt; block in &lt;head&gt;</td>
+      <td>One page</td>
+      <td>Single-page demos</td>
+    </tr>
+    <tr>
+      <td class="win">External ✓</td>
+      <td>Separate .css file</td>
+      <td>Every linked page</td>
+      <td>Real websites</td>
+    </tr>
+  </table>
+
+  <figure class="figure">
+    <img src="img/img4.png" alt="Diagram showing the CSS cascade order: inline style highest priority, then internal style, then external style, then browser default lowest priority">
+    <figcaption>fig. 3 — when rules from different sources conflict, this is the order that decides the winner</figcaption>
+  </figure>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>Assignment07 — Wisarut Khruealun 683380054-2</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page1.html">External CSS</a></li>
+      <li><a href="page2.html">Selectors</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

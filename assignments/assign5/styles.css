@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(15, 101, 132);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(28, 233, 209);
+}
+
+.head {
+    background: linear-gradient(to right, rgb(110, 198, 224), rgb(127, 217, 196));
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px 15px;
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.h1 {
+    color: rgb(9, 218, 155);
+    font-size: 20px;
+    padding: 0 20px 8px 20px;
+    border-bottom: 3px solid rgb(127, 217, 196);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.h1:hover {
+    color: rgb(110, 198, 224);
+    border-bottom-color: rgb(58, 169, 143);
+}
+
+.text {
+    padding: 0 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.font_size {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.font_size li {
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.25s, padding-left 0.25s;
+}
+
+.xx {
+    color: rgb(160, 224, 208);
+    font-size: 12px;
+}
+
+.x {
+    color: rgb(140, 217, 197);
+    font-size: 14px;
+}
+
+.s {
+    color: rgb(91, 202, 192);
+    font-size: 16px;
+}
+
+.m {
+    color: rgb(88, 189, 165);
+    font-size: 18px;
+}
+
+.l {
+    color: rgb(58, 169, 143);
+    font-size: 22px;
+}
+
+.xl {
+    color: rgb(41, 138, 116);
+    font-size: 26px;
+}
+
+.xxl {
+    color: rgb(32, 92, 86);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.font_size li:hover {
+    background-color: rgb(234, 247, 246);
+    padding-left: 18px;
+}
+
+.size {
+    font-size: 16px;
+    color: rgb(32, 92, 86);
+}
+
+
+ul {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.25s, padding-left 0.25s;
+}
+
+li:hover {
+    background-color: rgb(234, 247, 246);
+    padding-left: 14px;
+}
+
+.image {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: inline-block;
+    background-color:rgb(35, 120, 247);
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.button:hover{
+    background-color: rgb(0, 255, 17);
+    transition: 3s;
+}
+
+.footer {
+    background-color: rgb(127, 217, 196);
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}

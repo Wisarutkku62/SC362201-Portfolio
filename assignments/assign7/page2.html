@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment07 — Selectors</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="index.html">Assignment07</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page1.html">External CSS</a></li>
+      <li><a class="active" href="page2.html">Selectors</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <div class="lib-layout">
+
+    <aside class="lib-sidebar panel">
+      <ul>
+        <li><a class="current" href="#basic">Basic selectors</a></li>
+        <li><a href="#combo">Combinators</a></li>
+        <li><a href="#other">Pseudo &amp; attribute</a></li>
+        <li><a href="#anatomy">Rule anatomy</a></li>
+      </ul>
+    </aside>
+
+    <div class="lib-main">
+      <h1>CSS Selectors</h1>
+      <p class="muted">A selector is the part of a rule that says which elements the styles apply to. Picking the right kind of selector keeps a stylesheet short and easy to change later.</p>
+
+      <figure class="figure">
+        <img src="img/img3.png" alt="Diagram labeling the three parts of a CSS rule: nav is the selector, color is the property, and the hex value is the value">
+        <figcaption>every rule below is built from these three parts</figcaption>
+      </figure>
+
+      <section id="basic" class="shelf">
+        <h2>Basic selectors</h2>
+        <div class="shelf-grid">
+          <div class="selector-card panel">
+            <p class="code-line">p</p>
+            <p>Element selector — targets every &lt;p&gt; on the page.</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">.card</p>
+            <p>Class selector — targets any element with class="card".</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">#nav</p>
+            <p>ID selector — targets the one element with id="nav".</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">*</p>
+            <p>Universal selector — targets every element on the page.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="combo" class="shelf">
+        <h2>Combinators</h2>
+        <div class="shelf-grid">
+          <div class="selector-card panel">
+            <p class="code-line">.nav a</p>
+            <p>Descendant — any &lt;a&gt; inside an element with class "nav", at any depth.</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">ul &gt; li</p>
+            <p>Child — only &lt;li&gt; elements that are direct children of a &lt;ul&gt;.</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">h2 + p</p>
+            <p>Adjacent sibling — the &lt;p&gt; that comes immediately after an &lt;h2&gt;.</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">.card, .panel</p>
+            <p>Grouping — apply the same rule to more than one selector at once.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="other" class="shelf">
+        <h2>Pseudo-classes &amp; attributes</h2>
+        <div class="shelf-grid">
+          <div class="selector-card panel">
+            <p class="code-line">a:hover</p>
+            <p>Pseudo-class — styles a link only while the mouse is over it.</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">li:first-child</p>
+            <p>Pseudo-class — targets the first &lt;li&gt; in its parent.</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">input[type="text"]</p>
+            <p>Attribute selector — inputs whose type attribute equals "text".</p>
+          </div>
+          <div class="selector-card panel">
+            <p class="code-line">p::first-line</p>
+            <p>Pseudo-element — styles just the first line of text inside a &lt;p&gt;.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="anatomy" class="shelf">
+        <h2>Selector types at a glance</h2>
+        <figure class="figure" style="margin:0;">
+          <img src="img/img5.png" alt="Grid of six selector types: element, class, ID, descendant, pseudo-class, and attribute, each with example code">
+          <figcaption>six selector types worth knowing before writing bigger stylesheets</figcaption>
+        </figure>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>Assignment07 — Wisarut Khruealun 683380054-2</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page1.html">External CSS</a></li>
+      <li><a href="page2.html">Selectors</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
