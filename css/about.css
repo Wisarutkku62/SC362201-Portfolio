@@ -145,6 +145,25 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 8px 10px 8px 8px;
+    scroll-snap-type: y proximity;
+    scrollbar-width: thin;
+    scrollbar-color: #14161f transparent;
+}
+
+.gallery-grid::-webkit-scrollbar {
+    width: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+    background: #14161f;
+    border-radius: 99px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .gallery-grid img {
@@ -154,6 +173,7 @@
     border: 3px solid #14161f;
     border-radius: 14px;
     transition: transform .2s;
+    scroll-snap-align: start;
 }
 
 .gallery-grid img:hover {
@@ -233,5 +253,9 @@
 @media (max-width: 900px) {
     .about {
         grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        max-height: 420px;
     }
 }
