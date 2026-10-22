@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.layout-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.logo-area {
+    margin-bottom: 24px;
+}
+
+.title {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #93c5fd;
+    margin-top: 4px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.nav-menu a {
+    display: block;
+    color: #bfdbfe;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #ffffff;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+.submenu-l2,
+.submenu-l3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    width: 220px;
+    z-index: 99;
+    list-style: none;
+}
+
+.submenu-l3 {
+    width: 260px;
+}
+
+.dropdown:hover>.submenu-l2,
+.dropdown-l2:hover>.submenu-l3 {
+    display: block;
+}
+
+.submenu-l2 a,
+.submenu-l3 a {
+    color: #1e293b;
+    font-weight: normal;
+    padding: 8px 12px;
+}
+
+.submenu-l2 a:hover,
+.submenu-l3 a:hover {
+    background-color: #eff6ff;
+    color: #1e3a8a;
+}
+
+.submenu-l3 strong {
+    display: block;
+    font-size: 13px;
+    color: #1e293b;
+}
+
+.submenu-l3 span {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+    font-weight: normal;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.btn-contact {
+    display: block;
+    text-align: center;
+    border: 1px solid #60a5fa;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 24px 36px;
+    overflow-y: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.search-box input {
+    width: 280px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.page-header {
+    background: linear-gradient(135deg, #1b3280 0%, #0d1b48 100%);
+    color: #ffffff;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.page-header-text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.page-header-text p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.header-stats {
+    display: flex;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f56200;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #e2e8f0;
+}
+
+.threat-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.threat-row-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.threat-row-card:hover {
+    box-shadow: 0 8px 20px rgba(27, 50, 128, 0.08);
+}
+
+.threat-card-header {
+    padding: 16px 24px;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.threat-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.threat-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.threat-category-tag {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.badge-danger {
+    background-color: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+.badge-warning {
+    background-color: #fffbe2;
+    color: #d97706;
+    border: 1px solid #fef08a;
+}
+
+.threat-card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.col-threat {
+    padding: 20px 24px;
+    background-color: #fffdfd;
+    border-right: 1px dashed #e2e8f0;
+}
+
+.col-prevention {
+    padding: 20px 24px;
+    background-color: #f8fcf9;
+}
+
+.col-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item-list li {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #334155;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.item-list li::before {
+    content: "-";
+    color: #334155;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+}
+
+.threat-card-footer {
+    padding: 12px 24px;
+    background-color: #ffffff;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-tip {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.btn-report {
+    background-color: #F43F5E;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-report:hover {
+    background-color: #f72b4d;
+}
+
+.footer {
+    background-color: #1e293b;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .submenu-l2,
+    .submenu-l3 {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        margin-top: 6px;
+        padding: 6px;
+    }
+
+    .submenu-l2 a,
+    .submenu-l3 a,
+    .submenu-l3 strong {
+        color: #ffffff;
+    }
+
+    .submenu-l3 span {
+        color: #93c5fd;
+    }
+
+    .submenu-l2 a:hover,
+    .submenu-l3 a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .topbar {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 16px;
+    }
+
+    .header-stats {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .threat-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .threat-title-group {
+        flex-wrap: wrap;
+    }
+
+    .threat-card-body {
+        grid-template-columns: 1fr;
+    }
+
+    .col-threat {
+        border-right: none;
+        border-bottom: 1px dashed #e2e8f0;
+    }
+
+    .threat-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .btn-report {
+        width: 100%;
+        text-align: center;
+    }
+}

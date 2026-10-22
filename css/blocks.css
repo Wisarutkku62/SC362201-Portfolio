@@ -158,3 +158,18 @@
     color: #14161f;
     border: 2px solid #14161f;
 }
+
+.block .thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 14px 0;
+    border: 3px solid #14171f;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.block .meta {
+    justify-content: flex-end;
+}

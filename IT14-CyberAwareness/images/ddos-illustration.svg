@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" fill="none">
+  <rect width="640" height="280" rx="16" fill="#FFF7E8"/>
+  <circle cx="97" cy="208" r="42" fill="#FDECC8"/>
+  <circle cx="546" cy="66" r="30" fill="#FDECC8"/>
+  <rect x="253" y="70" width="134" height="150" rx="15" fill="#fff" stroke="#E8B85C" stroke-width="5"/>
+  <rect x="271" y="91" width="98" height="31" rx="8" fill="#FEF3C7"/>
+  <rect x="271" y="132" width="98" height="31" rx="8" fill="#FEF3C7"/>
+  <rect x="271" y="173" width="98" height="31" rx="8" fill="#FEF3C7"/>
+  <circle cx="286" cy="106" r="5" fill="#F59E0B"/>
+  <circle cx="286" cy="147" r="5" fill="#F59E0B"/>
+  <circle cx="286" cy="188" r="5" fill="#F59E0B"/>
+  <path d="M299 106h53M299 147h53M299 188h53" stroke="#FCD34D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M140 96h76M424 96h76M122 144h99M419 144h100M151 191h67M422 191h67" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+  <path d="m206 83 14 13-14 13M432 83l-14 13 14 13M210 131l14 13-14 13M430 131l-14 13 14 13" stroke="#D97706" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="45" r="17" fill="#FB7185"/>
+  <path d="M320 35v12" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="320" cy="53" r="2.5" fill="#fff"/>
+</svg>

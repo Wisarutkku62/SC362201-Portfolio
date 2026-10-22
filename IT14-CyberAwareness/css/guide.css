@@ -1,0 +1,253 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    align-items: flex-start;
+    padding: 48px 32px;
+}
+
+.guide {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guide-head h1 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-size: 30px;
+}
+
+.guide-head p {
+    max-width: 640px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.guide-head .note-menu {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0;
+}
+
+.jump a {
+    padding: 6px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: #1e3a8a;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.jump a:hover {
+    border-color: #1e3a8a;
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+.before {
+    margin-bottom: 28px;
+    padding: 14px 18px;
+    border-left: 4px solid #1e3a8a;
+    border-radius: 0 10px 10px 0;
+    background-color: #eff6ff;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.guide-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 20px;
+}
+
+.guide-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.apps {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 22px 20px;
+    border-top: 1px solid #e2e8f0;
+    scroll-margin-top: 20px;
+}
+
+.row:first-child {
+    border-top: none;
+}
+
+.row-head {
+    width: 100%;
+}
+
+.row-head h2 {
+    color: #1e3a8a;
+    font-size: 22px;
+}
+
+.row-head p {
+    margin-top: 4px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.row-body {
+    flex: 1;
+    padding-left: 22px;
+}
+
+.row-body li {
+    margin-bottom: 20px;
+    padding-left: 4px;
+}
+
+.row-body li:last-child {
+    margin-bottom: 0;
+}
+
+.row-body li::marker {
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+.row-body strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.path {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    font-size: 13px;
+}
+
+.row-body p {
+    margin-top: 6px;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.checklist {
+    margin-top: 0;
+    padding: 22px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background-color: #ffffff;
+    scroll-margin-top: 20px;
+}
+
+.checklist h2 {
+    color: #1e3a8a;
+    font-size: 20px;
+}
+
+.checklist > p {
+    margin: 4px 0 16px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.checklist ul {
+    list-style: none;
+}
+
+.checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #f1f5f9;
+}
+
+.checklist input {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    margin-top: 3px;
+    accent-color: #1e3a8a;
+    cursor: pointer;
+}
+
+.checklist label {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.checklist input:checked + label {
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.checklist .hotline {
+    margin: 18px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 28px 16px;
+    }
+
+    .guide-columns {
+        grid-template-columns: 1fr;
+    }
+}
+.content {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 34px clamp(24px, 3vw, 52px);
+    border: 0;
+    background: radial-gradient(ellipse at 85% 0%, #eaf1fb 0, transparent 34%), #f7f9fc;
+}
+
+.guide {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.guide-columns {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex: 1 1 auto;
+        padding: 24px 16px;
+    }
+}

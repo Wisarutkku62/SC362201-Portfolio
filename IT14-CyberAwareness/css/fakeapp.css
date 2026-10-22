@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+.layout-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.logo-area {
+    margin-bottom: 24px;
+}
+
+.title {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #93c5fd;
+    margin-top: 4px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.nav-menu a {
+    display: block;
+    color: #bfdbfe;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #ffffff;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+.submenu-l2,
+.submenu-l3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    width: 220px;
+    z-index: 99;
+    list-style: none;
+}
+
+.submenu-l3 {
+    width: 260px;
+}
+
+.dropdown:hover>.submenu-l2,
+.dropdown-l2:hover>.submenu-l3 {
+    display: block;
+}
+
+.submenu-l2 a,
+.submenu-l3 a {
+    color: #1e293b;
+    font-weight: normal;
+    padding: 8px 12px;
+}
+
+.submenu-l2 a:hover,
+.submenu-l3 a:hover {
+    background-color: #eff6ff;
+    color: #1e3a8a;
+}
+
+.submenu-l3 strong {
+    display: block;
+    font-size: 13px;
+    color: #1e293b;
+}
+
+.submenu-l3 span {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+    font-weight: normal;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.btn-contact {
+    display: block;
+    text-align: center;
+    border: 1px solid #60a5fa;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 24px 36px;
+    overflow-y: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.search-box input {
+    width: 280px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.header {
+    margin-bottom: 28px;
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+}
+
+.page-description {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+}
+
+.game-instructions {
+    margin: 0 0 20px;
+    padding: 12px 16px;
+    border-left: 3px solid #a16207;
+    background-color: #fef3c7;
+    color: #1e293b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.comparison-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.app-category {
+    min-width: 0;
+}
+
+.category-title {
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #1e293b;
+    font-size: 18px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+.app-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    min-width: 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background: #f1f5f9;
+    color: #1e293b;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.store-type {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.app-profile {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.app-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+
+.app-developer {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.app-stats {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.rating {
+    color: #d97706;
+    font-weight: 600;
+}
+
+.app-details {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.detail-label {
+    color: #64748b;
+    width: 45%;
+}
+
+.detail-value {
+    color: #0f172a;
+    width: 55%;
+    text-align: right;
+    font-weight: 500;
+}
+
+.text-danger {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.text-success {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.text-warning {
+    color: #d97706;
+    font-weight: 600;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    padding-top: 16px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btn-real {
+    background-color: #f3f0fd;
+    color: #1e3a8a;
+    border: 1px solid #c2bbf7;
+}
+
+.btn-real:hover {
+    background-color: #dce1fc;
+}
+
+.footer {
+    background-color: #1e293b;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 16px 20px;
+    }
+
+    .submenu-l2,
+    .submenu-l3 {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        margin-top: 6px;
+        padding: 6px;
+    }
+
+    .submenu-l2 a,
+    .submenu-l3 a,
+    .submenu-l3 strong {
+        color: #ffffff;
+    }
+
+    .submenu-l3 span {
+        color: #93c5fd;
+    }
+
+    .submenu-l2 a:hover,
+    .submenu-l3 a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .topbar {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .comparison-grid {
+        gap: 16px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .app-card {
+        padding: 10px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 12px;
+    }
+
+    .badge {
+        padding: 3px 7px;
+        font-size: 11px;
+    }
+
+    .store-type {
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .app-profile {
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 10px;
+    }
+
+    .pic {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+    }
+
+    .app-title {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .app-developer {
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .app-stats {
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .app-details {
+        padding: 10px 0;
+        gap: 8px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 2px;
+        font-size: 10px;
+    }
+
+    .detail-label,
+    .detail-value {
+        width: 100%;
+        text-align: left;
+    }
+
+    .card-actions {
+        margin-top: 8px;
+        padding-top: 10px;
+    }
+
+    .btn {
+        padding: 8px 4px;
+        font-size: 10px;
+    }
+}
