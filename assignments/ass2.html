@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wisarut Khruealun">
+    <title>Assignment 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #8B5E3C;
+            color: white;
+            text-align: center;
+            padding: 14px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        header p {
+            margin: 2px 0 0;
+            font-size: 9px;
+        }
+
+        nav {
+            background-color: #e0e0e0;
+            padding: 8px 4px;
+        }
+
+        nav a {
+            margin-right: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 9px;
+        }
+
+        main {
+            background-color: white;
+            flex: 1;
+        }
+
+        section {
+            padding: 12px;
+            border-bottom: 8px solid #eee;
+        }
+
+        section h2 {
+            font-size: 13px;
+            margin: 0 0 8px;
+        }
+
+
+        .row figure,
+        .row > div {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+        }
+
+        .video-row > div {
+            padding-top: 22px;
+            margin-left: 16px;
+        }
+
+        video {
+            width: 324px;
+            height: 184px;
+            margin-left: 6px;
+            background-color: black;
+        }
+
+        figcaption {
+            margin-left: 6px;
+            font-size: 9px;
+            color: #444;
+            margin-top: 5px;
+            max-width: 330px;
+        }
+
+        canvas {
+            border: 1px solid #999;
+            background-color: white;
+        }
+
+        .image-box {
+            width: 305px;
+            height: auto;
+            margin-left: 3px;
+            display: block;
+        }
+
+        .info-box {
+            width: 60%;
+            background-color: #e8e0ca;
+            padding: 17px 13px;
+        }
+
+        .info-box h3 {
+            margin: 0 0 4px;
+            font-size: 10px;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 9px;
+            color: #333;
+        }
+
+        .image-row {
+            padding-left: 34px;
+            padding-right: 7px;
+        }
+
+        .image-row figure,
+        .image-row .info-box {
+            vertical-align: middle;
+        }
+
+        .image-row .info-box {
+            margin-left: 56px;
+            position: relative;
+            top: 10px;
+        }
+
+        footer {
+            background-color: #8B5E3C;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 9px;
+        }
+
+        footer p {
+            margin: 1px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment #2</h1>
+        <p>Learning HTML5</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu1</a>
+        <a href="#">Menu2</a>
+        <a href="#">Menu3</a>
+    </nav>
+
+    <main>
+        <section class="row video-row">
+            <figure>
+                <h2>Video</h2>
+                <video controls>
+                    <source src="video_for_ass2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>HTML5 introduces semantic elements, multimedia support, and Canvas for graphics.
+                </figcaption>
+            </figure>
+
+            <div>
+                <h2>Canvas</h2>
+                <canvas id="myCanvas" width="100" height="60"></canvas>
+            </div>
+        </section>
+
+        <section class="row image-row">
+            <figure>
+                <h2>Image</h2>
+                <img class="image-box" src="image_for_ass2.jpg" alt="Web Design Technologies">
+            </figure>
+
+            <div class="info-box">
+                <h3>HTML5</h3>
+                <p>HTML5 is the latest version of the Hypertext Markup Language, which is used to structure and present
+                    content on the web.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>683380054-2 Wisarut Khruealun</p>
+        <p>Copyright © 2026</p>
+    </footer>
+
+</body>
+
+</html>
