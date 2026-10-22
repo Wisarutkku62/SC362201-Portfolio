@@ -57,6 +57,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    grid-auto-rows: 1fr; 
 }
 
 .block {
@@ -162,12 +163,13 @@
 .block .thumb {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;   
-    object-fit: cover;      
+    aspect-ratio: 4 / 3; 
+    object-fit: contain;     
+    object-position: center top;
     margin: 16px 0;
     border: 3px solid #14171f;
     border-radius: 14px;
-    background: rgba(0, 0, 0, 0.08);
+    background: #fff;    
 }
 
 .block .meta {
