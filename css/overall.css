@@ -1,0 +1,273 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 56px;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: clamp(3rem, 7.5vw, 6.6rem);
+    line-height: 1;
+}
+
+.hero .role {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #2f4bff;
+    margin: 18px 0 14px;
+    min-height: 2em;
+}
+
+.hero p.intro {
+    max-width: 50ch;
+    margin-bottom: 28px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    height: 1.1em;
+    background: #2f4bff;
+    margin-left: 3px;
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    max-width: 360px;
+    justify-self: center;
+    background: #2f4bff;
+    color: #fff;
+    border: 4px solid #14161f;
+    border-radius: 24px;
+    box-shadow: 14px 14px 0 #ff4d2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.1rem;
+}
+
+.photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.sticker {
+    position: absolute;
+    top: -34px;
+    right: -34px;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: #ffe14d;
+    color: #14161f;
+    border: 4px solid #14161f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.15rem;
+    line-height: 1.15;
+    z-index: 2;
+    animation: wobble 5s ease-in-out infinite;
+}
+
+@keyframes wobble {
+
+    0%,
+    100% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-8deg) scale(1.06);
+    }
+}
+
+
+/* แถบข้อความวิ่ง */
+.marquee {
+    overflow: hidden;
+    background: #2f4bff;
+    color: #fff;
+    border-top: 4px solid #14161f;
+    border-bottom: 4px solid #14161f;
+    margin: 64px -56px 0;
+    padding: 14px 0;
+}
+
+.marquee-track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-track span {
+    font-weight: 800;
+    font-size: 1.7rem;
+    padding: 0 22px;
+}
+
+.marquee-track span:nth-child(even) {
+    color: #ffe14d;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ตัวเลขสรุป */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.stat {
+    background: #fff;
+    border: 4px solid #14161f;
+    border-radius: 20px;
+    padding: 22px 26px;
+    box-shadow: 8px 8px 0 #14161f;
+}
+
+.stat b {
+    display: block;
+    font-size: 4.2rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #ff4d2e;
+}
+
+.stat:nth-child(2) b {
+    color: #2f4bff;
+}
+
+.stat:nth-child(3) b {
+    color: #14161f;
+}
+
+.stat span {
+    font-weight: 600;
+}
+
+/* ช่องทางลัด */
+.bento {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 260px;
+    padding: 26px;
+    border: 4px solid #14161f;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #14161f;
+    background: #ff4d2e;
+    box-shadow: 8px 8px 0 #14161f;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.tile:nth-child(2) {
+    background: #2f4bff;
+    color: #fff;
+}
+
+.tile:nth-child(3) {
+    background: #ffe14d;
+}
+
+.tile:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 14px 14px 0 #14161f;
+}
+
+.tile .num {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-weight: 800;
+    font-size: 3.4rem;
+    line-height: 1;
+    opacity: .35;
+}
+
+.tile h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.tile p {
+    font-size: .98rem;
+}
+
+.tile .arrow {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    transition: transform .2s;
+}
+
+.tile:hover .arrow {
+    transform: translate(6px, -6px);
+}
+
+@media (max-width: 900px) {
+
+    .hero,
+    .stats,
+    .bento {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        order: -1;
+        max-width: 270px;
+    }
+
+    .marquee {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sticker,
+    .marquee-track,
+    .cursor {
+        animation: none;
+    }
+}
